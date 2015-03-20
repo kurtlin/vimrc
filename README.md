@@ -1,27 +1,14 @@
-vgod's vimrc
+Kurt's vimrc (based on vgod's vimrc)
 ============
-Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
 
-Fork me on GITHUB  https://github.com/vgod/vimrc.
+Fork me on GITHUB  https://github.com/kurtlin/vimrc.
 
-ONE-STEP INSTALL
-----------------
-
-Use curl (for Mac OS X):
-
-     curl -o - https://raw.github.com/vgod/vimrc/master/auto-install.sh | sh
-
-or wget (for most UNIX platforms):
-
-     wget -O - https://raw.github.com/vgod/vimrc/master/auto-install.sh | sh
-
-
-MANUALLY INSTALL
+INSTALLATION
 ----------------
 
 1. Check out from github
 
-        git clone git://github.com/vgod/vimrc.git ~/.vim
+        git clone git://github.com/kurtlin/vimrc.git ~/.vim
         cd ~/.vim
         git submodule update --init
 
@@ -34,41 +21,6 @@ MANUALLY INSTALL
         cd .vim/bundle/command-t/ruby/command-t
         ruby extconf.rb
         make
-
-MANUALLY INSTALL ON WINDOWS
----------------------------
-
-1. Check out from github
-
-        cd C:\Program Files\Vim   (or your installed path to Vim)
-        rmdir /s vimfiles         (This deletes your old vim configurations. If you want to keep it, use move instead of rmdir.)
-        git clone git://github.com/vgod/vimrc.git vimfiles
-        git submodule update --init
-
-2. Install vimrc. Add the following line at the end of C:\Program Files\Vim\vimrc.
-
-        source $VIM/vimfiles/vimrc
-
-
-  
-INSTALL & UPGRADE PLUGIN BUNDLES
---------------------------------
-
-All plugins (except vim-latex) were checked out as git submodules, 
-which can be upgraded with `git pull`. For example, to upgrade Command-T 
-
-     cd ~/.vim/bundle/command-t
-     git pull
-
-To install a new plugin as a git submoudle, type the following commands.
-
-     cd ~/.vim
-     git submodule add [GIT-REPOSITORY-URL] bundle/[PLUGIN-NAME]
-
-HOW TO USE
-----------
-
-see the "USEFUL SHORTCUTS" section in vimrc to learn my shortcuts.
 
 PLUGINS
 -------
@@ -143,40 +95,4 @@ PLUGINS
   `:Ack [options] {pattern} [{directory}]`
 
 * [Git Gutter](https://github.com/airblade/vim-gitgutter): shows a git diff in the 'gutter' (sign column). It shows whether each line has been added, modified, and where lines have been removed.
-
-Language specific supports
---------------------------
-
-* Latex: Read `:help latex-suite.txt`
-* Restructured Text: `ctrl-u 1~5` inserts Part/Chapter/Section headers
-* HTML, Javascript, CoffeeScript, Python, CSS, C, C++, Java: use `TAB` to do omni-completion.
-* HTML/XML: End tags are automatically completed after typing a begin tag. (Typing > twice pushes the end tag to a new line.)
-
-Other good references
----------------------
-
-* http://amix.dk/vim/vimrc.html
-* http://spf13.com/post/perfect-vimrc-vim-config-file
-
-
-Vim Visual Cheat Sheet
-----------------------
-
-I've compiled and plotted a Vim Cheat Sheet for beginners. 
-Welcome to download and learn Vim with it.
-
-![My Vim Visual Cheat Sheet](http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png "My Vim Visual Cheat Sheet")
-
-* [Vim Visual Cheat Sheet (PNG)](http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png)
-* [Vim Visual Cheat Sheet (PDF)](http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.pdf)
-* [Vim入門圖解 Chinese Ver. (PNG)](http://blog.vgod.tw/wp-content/uploads/2009/12/vim-cheat-sheet-full.png)
-* [Vim入門圖解 Chinese Ver. (PDF)](http://blog.vgod.tw/wp-content/uploads/2009/12/vgod-vim-cheat-sheet-full.pdf)
-
-These Vim Visual Cheat Sheets are released under [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US).
-
-
-License
--------
-
-This vimrc project is released under [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US).
 
