@@ -75,6 +75,7 @@ set t_vb=
 set tm=500
 
 " TAB setting{
+   set ts=2
    set expandtab        "replace <TAB> with spaces
    set softtabstop=2 
    set shiftwidth=2 
@@ -151,6 +152,18 @@ nmap <c-l> <c-w>l<c-w><bar>
 set wmw=0                     " set the min width of a window to 0 so we can maximize others 
 set wmh=0                     " set the min height of a window to 0 so we can maximize others
 " }
+
+" Open and close all the three plugins on the same time 
+nmap <F8>  :TrinityToggleAll<CR> 
+
+" Open and close the Source Explorer separately 
+nmap <F9>  :TrinityToggleSourceExplorer<CR> 
+
+" Open and close the Taglist separately 
+nmap <F10> :TrinityToggleTagList<CR> 
+
+" Open and close the NERD Tree separately 
+nmap <F11> :TrinityToggleNERDTree<CR> 
 
 " move around tabs. conflict with the original screen top/bottom
 " comment them out if you want the original H/L
