@@ -106,3 +106,6 @@
 [submodule "bundle/vim-SystemVerilog"]
 	path = bundle/vim-SystemVerilog
 	url = https://github.com/WeiChungWu/vim-SystemVerilog.git
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
